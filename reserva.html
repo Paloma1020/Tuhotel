@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserva</title>
+</head>
+<body style="background-color: lightblue;">
+    <h1>Haga su reserva</h1>
+    <form action="procesareserva.php" method="get">
+
+    <fieldset>
+        <legend>Datos personales</legend>
+    <p>
+    <label for="name">Nombre: </label>
+    <input type="text" maxlength="100" id="name" autofocus name="name">
+    </p>
+    <p>
+    <Label for="apellido">Apellido: </Label>
+    <input type="text" name="apellido" id="apellido">
+    </p>
+    <p>
+    <Label for="DNI">DNI: </Label>
+    <input type="text" name="DNI" id="DNI" maxlength="10" required placeholder="DNI con letra">
+    </p>
+    </fieldset>
+
+    <fieldset>
+        <legend>Datos de tu Estancia</legend>
+    <p>
+        <label>Tipos de Habitaciones</label>
+        <p>
+            <label for="Individual">Individual</label>
+            <input type="radio" name="tipo" value="I" checked>
+        </p>
+        <p>
+            <label for="Doble">Doble</label>
+            <input type="radio" name="tipo" value="D">
+        </p>
+        <p>
+            <label for="Triple">Triple</label>
+            <input type="radio" name="tipo" value="T">
+        </p>
+    </p>
+    
+
+    Personas: <select name="personas" id="">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+    </select>
+    
+    <label for="mascota">Mascota</label>
+    <input type="checkbox" name="mascota" checked>
+    <p>
+    <input type="date" name="diallegada">
+    <input type="time" name="horallegada">
+    </p>
+
+    </fieldset>
+    <p>
+    <input type="submit" value="Enviar">
+    <input type="reset" value="Reiniciar">
+    </p>
+    <p>
+    <a href="index.html">Volver</a>
+    </p>
+    </form>
+
+    
+    
+    
+
+
+</body>
+</html>
